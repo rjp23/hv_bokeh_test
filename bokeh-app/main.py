@@ -1,6 +1,7 @@
 import numpy as np
 import holoviews as hv
 import holoviews.plotting.bokeh
+import hvplot
 
 renderer = hv.renderer('bokeh')
 
@@ -17,5 +18,8 @@ def selected_info(index):
 
 layout = points + hv.DynamicMap(selected_info, streams=[selection])
 
-doc = renderer.server_doc(layout)
-doc.title = 'HoloViews App'
+
+hvplot.show(layout)
+
+#doc = renderer.server_doc(layout)
+#doc.title = 'HoloViews App'

@@ -19,7 +19,7 @@ def selected_info(index):
 layout = points + hv.DynamicMap(selected_info, streams=[selection])
 
 
-hvplot.show(layout)
+#hvplot.show(layout)
 
-#doc = renderer.server_doc(layout)
-#doc.title = 'HoloViews App'
+doc = renderer.server_doc(layout)
+doc.title = 'HoloViews App'

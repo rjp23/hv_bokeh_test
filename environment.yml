@@ -1,0 +1,5 @@
+dependencies:
+  - nbserverproxy
+  - pyviz/label/dev::holoviews
+  - pyviz/label/dev::hvplot
+  - bokeh::bokeh
